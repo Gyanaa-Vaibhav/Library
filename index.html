@@ -8,15 +8,58 @@
     <title>Library</title>
 </head>
 <body>
-    <div class="booklist" id="bookList"></div>
-    <button id="OK">OK</button>
-    <div id="module" class="module">
-        <label for="title">Title</label>
-        <input id="title" name="title" type="text">
-        <p>Author</p>
-        <p>Pages</p>
-        <p>Status</p>
-        <button>Done</button>
-    </div>
+
+    <nav>
+        <h1>Library V1</h1>
+        <button id="newBook">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>plus</title>
+                <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+            </svg>
+            New Book</button>
+    </nav>
+
+    <main class="booklist" id="bookList">
+
+        <!-- <div class="card">
+            <h3>Title : <p>&nbsp;Hello</p> </h3>
+            <h3>Author :</h3>
+            <h3>Pages :</h3>
+            <h3 id="status">Status :
+                <a href="#"><svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <title>check-circle-outline</title>
+                    <path
+                        d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z" />
+                </svg>
+            </a>
+            </h3>
+        </div> -->
+
+    </main>
+
+
+    <form id="module" class="module">
+        <div class="int">
+            <label for="title">Title : </label>
+            <input id="title" name="title" type="text">
+        </div>
+        <div class="int">
+            <label for="author">Author : </label>
+            <input id="author" name="author"  type="text">
+        </div>
+        <div class="int">
+            <label for="pages">Pages : </label>
+            <input id="pages" name="pages" type="text">
+        </div>
+        <div class="int read">
+            <label for="read">Read : </label>
+            <input id="read" name="read" type="checkbox">
+        </div>
+        <button id="addBookBtn">Done</button>
+    </form>
+
+    <footer>
+        <button id="clearAll">Clear All</button>
+    </footer>
 </body>
 </html>
